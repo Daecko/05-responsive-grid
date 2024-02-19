@@ -1,0 +1,125 @@
+body {
+    background-color: #E6EFF5;
+    font-family: "Karla";
+}
+
+h1,h4,p {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    margin-bottom: 0;
+}
+button {
+    margin-left: 10%;
+    margin-bottom: 10%;
+    font-weight: 700;
+    font-size: 16px;
+}
+#rect1 {
+    grid-area: r1;
+    background-color: white;
+}
+#rect1 h1 {
+    color: #2AB3B1;
+    padding-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.06px;
+}
+#rect1 h4 {
+    color: #C0DF33;
+    padding-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.04px;
+}
+#rect1 p {
+    color: #9AA7BE;
+    padding-bottom: 5%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+#rect2 {
+    grid-area: r2;
+    background-color: #2AB3B1;
+    color: white;
+}
+#rect2 button {
+    background-color: #C0DF33;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    height: 39px;
+}
+#rect2 h1,#rect2 #sameline{
+    padding-right: 2%;
+    display: inline;
+    vertical-align: middle;
+    line-height: 37.41px;
+}
+#rect2 h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.04px;
+    padding-bottom: 5%;
+}
+#rect2 p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 5%;
+}
+#sameline {
+    color: rgba(255, 255, 255, 0.567);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    padding: 0%;
+}
+#rect3 {
+    grid-area: r3;
+    background-color: #5fd2d0;
+    color: white;
+}
+#rect3 h4 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 5%;
+    line-height: 21.04px;
+}
+#rect3 p {
+    color: rgba(255, 255, 255, 0.567);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px
+}
+@media only screen and (min-width: 640px) {
+    body #grid {
+    display: grid;
+    grid-template-areas: 
+    "r1 r1"
+    "r2 r3";
+    margin: 10% 20%;
+}
+}
+@media only screen and (max-width: 639px) {
+    body #grid {
+        display: grid;
+        grid-template-areas: 
+        "r1"
+        "r2"
+        "r3";
+        margin:10% 7.5%;
+    }
+    #rect1 h1 {
+        font-size: 20px;
+    }
+    #rect1 h4 {
+        font-size: 15px;
+    }
+    #rect1 p {
+        font-size: 14px;
+    }
+}
